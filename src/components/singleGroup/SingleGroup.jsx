@@ -59,7 +59,7 @@ export const SingleGroup = () => {
           className={styles.deleteIcon}
           title="Delete Note"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -76,7 +76,7 @@ export const SingleGroup = () => {
             <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
             <line x1="10" x2="10" y1="11" y2="17" />
             <line x1="14" x2="14" y1="11" y2="17" />
-          </svg>
+          </svg> */}
         </span>
       </div>
 

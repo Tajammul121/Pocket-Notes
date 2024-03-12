@@ -25,7 +25,7 @@ export const SingleNote = ({ note, groupId }) => {
           className={styles.deleteIcon}
           title="Delete Note"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -42,14 +42,14 @@ export const SingleNote = ({ note, groupId }) => {
             <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
             <line x1="10" x2="10" y1="11" y2="17" />
             <line x1="14" x2="14" y1="11" y2="17" />
-          </svg>
+          </svg> */}
         </span>
         <span
           onClick={() => setOpenModal(true)}
           className={styles.editIcon}
           title="Edit Note"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -64,8 +64,8 @@ export const SingleNote = ({ note, groupId }) => {
             <path d="m18 5-3-3H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2" />
             <path d="M8 18h1" />
             <path d="M18.4 9.6a2 2 0 1 1 3 3L17 17l-4 1 1-4Z" />
-          </svg>
-        </span>
+          </svg>*/}
+        </span> 
 
         <UpdateNoteModal
           openModal={openModal}
