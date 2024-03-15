@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import styles from "./homepage.module.css";
-import { Sidebar } from "../../components/sidebar/Sidebar";
+import styles from "./homep.module.css";
+import { Sidebar } from "../../components/sidebar/Sidebar"
 import { Landing } from "../../components/landing/Landing";
-import { SingleGroup } from "../../components/singleGroup/SingleGroup";
+import { GroupS } from "../../components/GroupS/GroupS";
 import { useSelector } from "react-redux";
 
 export default function HomePage() {
@@ -41,7 +41,7 @@ export default function HomePage() {
       ) : (
         (currentActiveGroup || windowWith > 719) && (
           <div className={styles.right_container} style={{ display: "block" }}>
-            <SingleGroup />
+            <GroupS />
           </div>
         )
       )}

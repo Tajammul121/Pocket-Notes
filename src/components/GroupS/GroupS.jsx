@@ -1,17 +1,16 @@
-import styles from "./singleGroup.module.css";
+import styles from "./GroupS.module.css";
 import sendIcon from "../../assets/icons/send-icon.svg";
 import sendColorIcon from "../../assets/icons/send-colorful-icon.svg";
 import backIcon from "../../assets/icons/back-arrow.svg";
-import { SingleNote } from "../singleNote/SingleNote";
+import { Notes } from "../Notes/Notes";
 import { useSelector, useDispatch } from "react-redux";
 import {
   changeCurrentActiveGroup,
   createNote,
-  deleteGroup,
 } from "../../redux/noteSlice";
 import { useState } from "react";
 
-export const SingleGroup = () => {
+export const GroupS = () => {
   const { currentActiveGroup, groups } = useSelector((note) => note.note);
   const dispatch = useDispatch();
 
@@ -27,10 +26,6 @@ export const SingleGroup = () => {
 
     dispatch(createNote({ content, groupId: newGrp[0].id }));
     setContent("");
-  };
-
-  const handleDeleteGroup = () => {
-    dispatch(deleteGroup({ groupId: newGrp[0].id }));
   };
 
   return (
@@ -54,37 +49,14 @@ export const SingleGroup = () => {
 
           <h4>{newGrp[0].groupName}</h4>
         </div>
-        <span
-          onClick={handleDeleteGroup}
-          className={styles.deleteIcon}
-          title="Delete Note"
-        >
-          {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="red"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-trash-2"
-          >
-            <path d="M3 6h18" />
-            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-            <line x1="10" x2="10" y1="11" y2="17" />
-            <line x1="14" x2="14" y1="11" y2="17" />
-          </svg> */}
-        </span>
+       
       </div>
 
       <div className={styles.allNotes}>
         {newGrp[0].notes?.length === 0 && <p>No Notes to display!</p>}
 
         {newGrp[0].notes?.map((note) => (
-          <SingleNote key={note.id} note={note} groupId={newGrp[0].id} />
+          <Notes key={note.id} note={note} groupId={newGrp[0].id} />
         ))}
       </div>
 
