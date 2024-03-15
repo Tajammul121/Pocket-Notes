@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./homep.module.css";
-import { Sidebar } from "../../components/sidebar/Sidebar"
-import { Landing } from "../../components/landing/Landing";
-import { GroupS } from "../../components/GroupS/GroupS";
+import { Sidebar } from "../../components/JSX/Sidebar"
+import { Landing } from "../../components/JSX/Landing";
+import { GroupS } from "../../components/JSX/GroupS";
 import { useSelector } from "react-redux";
 
 export default function HomePage() {

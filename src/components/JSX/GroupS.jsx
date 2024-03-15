@@ -1,8 +1,8 @@
-import styles from "./GroupS.module.css";
+import styles from "../CSS/GroupS.module.css";
 import sendIcon from "../../assets/icons/send-icon.svg";
 import sendColorIcon from "../../assets/icons/send-colorful-icon.svg";
 import backIcon from "../../assets/icons/back-arrow.svg";
-import { Notes } from "../Notes/Notes";
+import { Notes } from "../JSX/Notes";
 import { useSelector, useDispatch } from "react-redux";
 import {
   changeCurrentActiveGroup,

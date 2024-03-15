@@ -1,4 +1,4 @@
-import styles from "./Notes.module.css";
+import styles from "../CSS/Notes.module.css";
 
 export const Notes = ({ note, groupId }) => {
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./createGroupModal.module.css";
+import styles from "../CSS/createGroupModal.module.css";
 import { Modal } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { createGroup } from "../../redux/noteSlice";

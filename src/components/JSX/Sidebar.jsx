@@ -1,5 +1,5 @@
-import styles from "./Sidebar.module.css";
-import { CreateGroupModal } from "../createGroupModal/CreateGroupModal";
+import styles from "../CSS/Sidebar.module.css";
+import { CreateGroupModal } from "../JSX/CreateGroupModal";
 import { useSelector, useDispatch } from "react-redux";
 import { changeCurrentActiveGroup } from "../../redux/noteSlice";
 import { useState } from "react";

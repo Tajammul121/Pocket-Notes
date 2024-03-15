@@ -1,4 +1,4 @@
-import styles from "./landing.module.css";
+import styles from "../CSS/landing.module.css";
 import mainImg from "../../assets/images/notes-main.png";
 import lockIcon from "../../assets/icons/lock-icon.svg";
 
